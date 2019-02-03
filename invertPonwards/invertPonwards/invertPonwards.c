@@ -6,7 +6,7 @@ int main()
 	printf("Enter integer, start position, length to invert: \n");
 	scanf_s("%d %d %d", &X, &P, &N);
 	RESULT = invertponwards(X, P, N);
-	printf("\nINVERTED INTEGER IN DECIMAL FORM IS \t%d", RESULT);
+	printf("\n inverted integer in decimal form is \t%d", RESULT);
 	return 0;
 	getch();
 }
