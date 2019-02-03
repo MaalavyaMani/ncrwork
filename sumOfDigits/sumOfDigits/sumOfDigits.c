@@ -2,7 +2,7 @@
 
 int main()
 {
-	int number, temp, sum = 0, remainder, num;
+	int number, temp, sum = 0, remainder;
 
 	printf("Enter an integer\n");
 	scanf_s("%d", &number);
@@ -18,7 +18,7 @@ int main()
 
 	printf("Sum of digits of %d = %d\n", number, sum);
 
-	scanf_s("%d", &num);
+	getch();
 
 	return 0;
 }
