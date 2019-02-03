@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int number, originalNumber, remainder, result = 0,var;
+	int number, originalNumber, remainder, result = 0,num;
 
 	printf("Enter a three digit integer: \n ");
 	scanf_s("%d", &number);
@@ -21,7 +21,7 @@ int main()
 	else
 		printf("\n %d is not an Armstrong number", number);
 
-	scanf_s("%d", &var);
+	scanf_s("%d", &num);
 	    
 	return 0;
 }
