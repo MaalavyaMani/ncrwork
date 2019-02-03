@@ -2,21 +2,21 @@
 
 int main()
 {
-	int number, temp, sum = 0, remainder;
+	int num, temp, sum = 0, rem;
 
 	printf("Enter an integer\n");
-	scanf_s("%d", &number);
+	scanf_s("%d", &num);
 
-	temp = number;
+	temp = num;
 
 	while (temp != 0)
 	{
-		remainder = temp % 10;
-		sum = sum + remainder;
+		rem = temp % 10;
+		sum = sum + rem;
 		temp = temp / 10;
 	}
 
-	printf("Sum of digits of %d = %d\n", number, sum);
+	printf("Sum of digits of %d = %d\n", num, sum);
 
 	getch();
 
