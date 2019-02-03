@@ -3,12 +3,13 @@ int main()
 {
 	int X, P, N, RESULT;
 	int invertponwards(int, int, int);
-	printf("Enter integer, start position, length to invert: \n");
+	printf("Eter integer, start position, invert length \n");
 	scanf_s("%d %d %d", &X, &P, &N);
+	printf("Coverted binary value of %d is\t", X);
 	RESULT = invertponwards(X, P, N);
-	printf("\n inverted integer in decimal form is \t%d", RESULT);
-	return 0;
+	printf("\ninverted integer in decimal form is \t%d", RESULT);
 	getch();
+	return 0;
 }
 
 int invertponwards(int X, int P, int N)
@@ -43,7 +44,7 @@ int invertponwards(int X, int P, int N)
 		printf("YOU HAVE ENTERED LARGE VALUE FOR P AND N");
 	}
 
-	printf("INVERTED INTEGER IN BINARY FORM IS \t");
+	printf("Inverted integer in binary form is \t");
 	for (I = LEN - 1; I > -1; I--)
 	{
 		printf("%d ", BIN[I]);
