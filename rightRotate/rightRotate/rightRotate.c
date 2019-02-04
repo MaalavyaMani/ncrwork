@@ -5,7 +5,7 @@
 int rotate_right(int n, int d)
 {
 	
-	return (n >> d) ;
+	return (n >> d);
 }
 
 int main()
