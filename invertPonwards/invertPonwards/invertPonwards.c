@@ -7,7 +7,6 @@ int main()
 	scanf_s("%d %d %d", &X, &P, &N);
 	printf("Coverted binary value of %d is\t", X);
 	RESULT = invertponwards(X, P, N);
-	printf("\ninverted integer in decimal form is \t%d", RESULT);
 	getch();
 	return 0;
 }
@@ -31,7 +30,7 @@ int invertponwards(int X, int P, int N)
 	LIMIT = P + N;
 	if (LIMIT < LEN)
 	{
-		for (I = P - 1; I < P + N - 1; I++)
+		for ( I = P + N - 1;I > P - 1; I--)
 		{
 			if (BIN[I] == 0)
 				BIN[I] = 1;
@@ -49,10 +48,5 @@ int invertponwards(int X, int P, int N)
 	{
 		printf("%d ", BIN[I]);
 	}
-	Y = 0;
-	for (I = LEN - 1; I >= 0; I--)
-	{
-		Y = Y * 2 + BIN[I];
-	}
-	return Y;
+	
 }

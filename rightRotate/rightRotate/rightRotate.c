@@ -1,11 +1,11 @@
 #include<stdio.h> 
-#define INT_BITS 32
+//#define INT_BITS 32
 
 
 int rotate_right(int n, int d)
 {
 	
-	return (n >> d) | (n << (INT_BITS - d));
+	return (n >> d) ;
 }
 
 int main()
