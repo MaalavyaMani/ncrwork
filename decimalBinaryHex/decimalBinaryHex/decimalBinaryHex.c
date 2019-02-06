@@ -20,6 +20,7 @@ int itob(int n, int s) {
 	}
 	return s;
 }
+
 int itoh(int n, int s) {
 	printf("\n HexaDecimal =%x", n);
 	return n;
