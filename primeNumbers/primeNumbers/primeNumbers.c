@@ -11,7 +11,7 @@ int main()
 	{
 		flag = 0;
 
-		for (i = 2; i <= low / 2; i++)
+		for (i = 2; i <= low / 2; ++i)
 		{
 			if (low % i == 0)
 			{
@@ -23,7 +23,7 @@ int main()
 		if (flag == 0)
 			printf("%d ", low);
 
-		low++;
+		++low;
 	}
 	getch();
 	return 0;
