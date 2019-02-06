@@ -10,7 +10,6 @@ int main()
 	while (low < high)
 	{
 		flag = 0;
-
 		for (i = 2; i <= low / 2; ++i)
 		{
 			if (low % i == 0)
