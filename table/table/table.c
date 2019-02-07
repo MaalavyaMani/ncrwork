@@ -9,7 +9,7 @@ int main() {
 	printf("The value of *(*(table+1) +1) is %f \n", *(*(table + 1) + 1));
 	printf("The value of *(*(table)+1) is %f \n", *(*(table)+1) );
 	printf("The value of *(*(table+1) is %f \n", *(*(table + 1)) );
-	printf("The value of *(*(table) + 1)+1 is %f \n", *(*(table)+1) + 1);
+	printf("The value of *(*(table) + 1)+1 is %f \n", *(*(table)+1) +1);
 	getch();
 	return 0;
 }
