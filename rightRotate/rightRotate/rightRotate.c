@@ -1,20 +1,22 @@
-#include<stdio.h> 
-//#define INT_BITS 32
-
-
-int rotate_right(int n, int d)
-{
-	
-	return (n >> d);
-}
-
+#include<stdio.h>
+#include<math.h>
+int rotate_right(int, int);
 int main()
 {
-	int n, d;
-	printf("enter the number and the shift \n");
-	scanf_s("%d %d", &n, &d);
-	
-	printf("\n Right Rotation of %d by %d is ", n, d);
-	printf("%d", rotate_right(n, d));
+	int n, b, res;
+	printf("Enter no :");
+	scanf_s("%d", &n);
+	printf("\nEnter no of positions to rotate right:");
+	scanf_s("%d", &b);
+	res = rotate_right(n, b);
+
+	printf("\nResult is:%d", res);
 	getch();
+	return 0;
+}
+int rotate_right(int n, int b)
+{
+	int res = n / (pow(2, b));
+	return res;
+
 }
