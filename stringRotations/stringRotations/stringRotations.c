@@ -8,9 +8,9 @@ int main()
 	printf("Enter a word: ");
 	gets(a);
 
-	for (i = 0; a[i] != 0; i++)
+	for (i = 0; a[i] !='\0'; i++)
 	{
-		for (j = i; a[j] != 0; j++)
+		for (j = i; a[j] != '\0'; j++)
 			printf("%c", a[j]);
 
 		for (j = 0; j < i; j++)

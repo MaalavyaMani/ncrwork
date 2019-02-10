@@ -2,33 +2,19 @@
 #include<string.h>
 int replace(char*);
 
-/*int replace(char* s) {
+int replace(char* s) {
 	int i,count=0;
 	int length = strlen(s);
 	for(i=0;i<length;i++)
-		if (*s == ' ') {
-			*s = '-';
+		if (s[i] == ' ') {
+			s[i] = '-';
 			count++;
 
-		}gets(s);
-	return count;
-}*/
-int replace(char* Test)
-{
-	int length = strlen(Test);
-	int count = 0;
-	for (unsigned int i = 0; i < length; i++)
-	{
-		if (*Test == ' ')
-		{
-			*Test = '-';
-			count++;
 		}
-		Test++; // move pointer to next position in memory
-
-	}
-	return(count);
+	printf("%s", s);
+	return count;
 }
+
 int main() {
 	int n;
 	char *cat = "The cat sat";
